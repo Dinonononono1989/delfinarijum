@@ -18,10 +18,10 @@ recognition.onresult = function (event) {
     message.textContent = 'Речено је: ' + command + '.';
     window.open(`https://delfi.rs/pretraga?c=0&q=${command}`);
 }
-recognition.onspeechend = function () {
+//recognition.onspeechend = function () {
     //document.body.style.backgroundColor = "white";
     //message.textContent = 'Чича мича, мора да се прича!';
-};
+//};
 recognition.onerror = function (event) {
     console.log(event.error);
     message.textContent = 'Чича мича, мора да се прича!';
