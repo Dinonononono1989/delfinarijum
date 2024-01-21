@@ -26,6 +26,9 @@ recognition.onerror = function (event) {
     console.log(event.error);
     message.textContent = 'Чича мича, мора да се прича!';
 }
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+document.querySelector('#btnGiveCommand').addEventListener(touchEvent, recognition.start);
+
 document.querySelector('#btnGiveCommand').addEventListener('click', function () {
     recognition.start();
 });
