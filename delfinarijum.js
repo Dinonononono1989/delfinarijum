@@ -4,7 +4,7 @@ let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
  });
 
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-var SpeechGrammarList = SpeechGrammarList;
+var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
 
 var grammer = '#JSGF V1.0';
 
