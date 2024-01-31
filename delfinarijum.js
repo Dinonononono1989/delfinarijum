@@ -31,6 +31,5 @@ recognition.onerror = function (event) {
 }
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
  document.querySelector('#btnGiveCommand').addEventListener(touchEvent, function () {
-     alert(touchEvent);
      recognition.start();
  });
