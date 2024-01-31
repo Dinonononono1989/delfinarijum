@@ -30,5 +30,6 @@ let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 document.querySelector('#btnGiveCommand').addEventListener(touchEvent, recognition.start);
 
 document.querySelector('#btnGiveCommand').addEventListener('click', function () {
+    alert('proba');
     recognition.start();
 });
