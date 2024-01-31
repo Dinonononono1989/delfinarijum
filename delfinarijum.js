@@ -1,7 +1,9 @@
- document.querySelector('#btnGiveCommand').addEventListener('click', function () {
-    alert('proba');
-    //recognition.start();
+ document.querySelector('#btnGiveCommand').addEventListener('touchstart', function () {
+     alert('tralala');
+    // recognition.start();
  });
+
+
 
 // var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 // var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
