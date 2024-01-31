@@ -1,5 +1,6 @@
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
  document.querySelector('#btnGiveCommand').addEventListener('touchstart', function () {
-     alert('tralala');
+     alert(touchEvent);
     // recognition.start();
  });
 
