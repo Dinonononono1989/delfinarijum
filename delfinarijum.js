@@ -1,7 +1,10 @@
-
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+ document.querySelector('#btnGiveCommand').addEventListener(touchEvent, function () {
+     recognition.start();
+ });
 
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+var SpeechGrammarList = SpeechGrammarList;
 
 var grammer = '#JSGF V1.0';
 
@@ -29,7 +32,3 @@ recognition.onerror = function (event) {
     console.log(event.error);
     message.textContent = 'Чича мича, мора да се прича!';
 }
-let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
- document.querySelector('#btnGiveCommand').addEventListener(touchEvent, function () {
-     recognition.start();
- });
