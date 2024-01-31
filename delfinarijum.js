@@ -4,16 +4,16 @@ let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
  });
 
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-var SpeechGrammarList = SpeechGrammarList;
+//var SpeechGrammarList = SpeechGrammarList;
 
 var grammer = '#JSGF V1.0';
 
 var recognition = new SpeechRecognition();
-var speechRecognitionGrammerList = new SpeechGrammarList();
-speechRecognitionGrammerList.addFromString(grammer, 1);
+//var speechRecognitionGrammerList = new SpeechGrammarList();
+//speechRecognitionGrammerList.addFromString(grammer, 1);
 
 
-recognition.grammers = speechRecognitionGrammerList;
+//recognition.grammers = speechRecognitionGrammerList;
 recognition.lang = 'sr-SP';
 recognition.interimResult = false;
 document.body.style.backgroundColor = "blue";
